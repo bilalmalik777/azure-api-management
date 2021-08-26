@@ -33,7 +33,7 @@ resource "azurerm_api_management_api" "api" {
   name                = "${var.prefix}-api"
   resource_group_name = azurerm_resource_group.rg.name
   api_management_name = azurerm_api_management.apim_service.name
-  revision            = "2"
+  revision            = "1"
   display_name        = "${var.prefix}-api"
   path                = "example"
   protocols           = ["https", "http"]
